@@ -16,20 +16,8 @@ function App() {
     { color: 'cyan' },
   ];
 
-  // Columns
-  const numColumns = 3;
-  const itemsPerColumn = 3;
 
   // Create an array of squares divided into groups of 3
-  const columns = [];
-  for (let i = 0; i < numColumns; i++) {
-    const startIndex = i * itemsPerColumn;
-    const endIndex = Math.min(startIndex + 3, squareData.length);
-    const columnGroup = squareData.slice(startIndex, endIndex);
-
-    columns.push(columnGroup);
-  }
-
   const rowArray = [0,1,2];
   const colArray = [0,1,2];
 
